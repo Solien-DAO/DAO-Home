@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  
+}
+
+#__next {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #050718;
+  tailwind: bg-slate-800;
+  font-family: 'Inter', sans-serif;
+}
+.landing-title {
+  @apply font-extrabold text-6xl text-center tracking-tight;
+  line-height: 84px;
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-align: center;
+  background: linear-gradient(125.86deg, #3cefcf 63.2%, #2c50f5 87.51%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typing-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px; /* Adjust as needed */
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+/* 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+html, body, #__next {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+} */
+
+/* Your custom styles... */
+/* 
+.animated-background {
+  animation: gradientBackground 10s ease infinite;
+  background: linear-gradient(45deg, #6D83F2, #A1A6F6, #D1CAFA);
+  background-size: 400% 400%;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.special {
+  background: linear-gradient(90deg, #000000, #000000);
+  background-size: 200% 200%;
+}
+
+.globe-glow {
+  background: 
+    /* Horizontal line (make thicker by increasing the second value of background-size) */
+    linear-gradient(to bottom, rgba(102, 84, 222, 0) 50%, rgba(102, 84, 222, 0.3) 50%) no-repeat, 
+    /* Glowing semicircle (make smaller by reducing the percentage in radial-gradient) */
+    radial-gradient(at bottom, #6654de 10%, transparent 60%) no-repeat; 
+  background-size: 100% 5px, 100% 100%; /* Size for line (thickness) and semicircle (smaller glow) */
+  background-position: center bottom; /* Positioning at the bottom */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* .nav-bar-selected:hover {
+  background: radial-gradient(
+    100% 150% at 50% 100%,
+    #7f7fd5 0%,
+    rgba(127, 127, 213, 0.36) 25%,
+    rgba(127, 127, 213, 0.22) 75%,
+    rgba(127, 127, 213, 0) 100%
+  );
+} */
