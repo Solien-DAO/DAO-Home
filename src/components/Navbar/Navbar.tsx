@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import GlowingButton from '../Buttons/GlowingButton/GlowingButton';
 
@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="flex items-center justify-between py-2 px-4 md:px-8 lg:px-32 bg-b-blue text-white">
+    <header className="relative flex flex-row items-center justify-between py-4 px-4 md:px-32 bg-b-blue text-white">
       <div className="flex items-center">
         <Image
           src="/icons/daologo.png"
@@ -18,23 +18,25 @@ export default function Navbar() {
           width={50}
           height={50}
         />
-        <span className="ml-2 text-lg md:text-xl font-bold">Solien DAO</span>
+        <span className="ml-2 font-bold">Solien DAO</span>
       </div>
 
       {/* Hamburger Icon */}
-      <div className="md:hidden" onClick={toggleMenu}>
-        <span className="material-icons">
-          {isOpen ? 'close' : 'menu'}
-        </span>
+      <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
+        {isOpen ? (
+          <Image src="/icons/close.svg" alt="Close menu" width={24} height={24} />
+        ) : (
+          <Image src="/icons/burger.svg" alt="Open menu" width={24} height={24} />
+        )}
       </div>
 
       {/* Menu Items */}
-      <nav className={`absolute md:relative left-0 w-full md:w-auto bg-b-blue md:bg-transparent p-4 md:p-0 transition-all ease-in-out duration-300 ${isOpen ? 'block' : 'hidden'} md:flex items-center space-x-4`}>
-        <a href="https://www.google.com" className="text-white block md:inline h-full nav-bar-selected">Home</a>
-        <a href="https://www.google.com" className="text-white block md:inline nav-bar-hover">Dashboard</a>
-        <a href="https://www.google.com" className="text-white block md:inline nav-bar-hover">DAC</a>
-        <a href="https://www.google.com" className="text-white block md:inline">Forum</a>
-        <a href="https://www.google.com" className="text-white block md:inline">Docs</a>
+      <nav className={`absolute right-0 mt-2 w-full md:w-auto md:static bg-b-blue md:bg-transparent p-4 md:p-0 transition-all ease-in-out duration-300 ${isOpen ? 'block' : 'hidden'} md:flex items-center space-x-4 z-10`}>
+        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:bg-transparent md:text-white md:p-0">Home</a>
+        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:bg-transparent md:text-white md:p-0">Dashboard</a>
+        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:bg-transparent md:text-white md:p-0">DAC</a>
+        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:bg-transparent md:text-white md:p-0">Forum</a>
+        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:bg-transparent md:text-white md:p-0">Docs</a>
         <GlowingButton href="https://www.google.com">
           Vote
         </GlowingButton>
