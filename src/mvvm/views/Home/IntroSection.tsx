@@ -6,7 +6,7 @@ const IntroSection: React.FC = () => {
   const cards = [
     {
       iconPath: '/icons/daologo.png', // Replace with your actual icon paths
-      title: 'Grape Access',
+      title: 'NFT Access',
       text: 'Connecting members social accounts to unique cryptographic keys...',
     },
     // ... Repeat for the second card
