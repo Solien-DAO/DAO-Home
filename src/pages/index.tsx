@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber'; // Ensure useThree is imported
 import { OrbitControls, Stars } from '@react-three/drei';
 import Image from 'next/image';
 import Navbar from '../components/Navbar/Navbar';
@@ -7,16 +6,17 @@ import Footer from '../components/Footer/Footer';
 import GlowingButton from '../components/Buttons/GlowingButton/GlowingButton';
 import TypingAnimation from '../components/TypingAnimation/TypingAnimation'; // Make sure to create this component
 import IntroSection from '../mvvm/views/Home/IntroSection';
+import { Canvas, useFrame, useThree, extend } from '@react-three/fiber';
+import * as THREE from 'three';
 
 const StarGlobe = () => {
-  const starsRef = useRef(null);
+  const starsRef = useRef<any>(null); // Using 'any' as a workaround
   const orbitControlsRef = useRef(null);
   const { camera } = useThree();
 
   camera.position.set(0, 2.94, 480);
 
   useFrame(() => {
-    // Rotating the stars
     if (starsRef.current) {
       starsRef.current.rotation.y += 0.001;
     }
@@ -26,12 +26,10 @@ const StarGlobe = () => {
     <group>
       <OrbitControls enableZoom={false} ref={orbitControlsRef} />
       <pointLight position={[0, 0, 0]} />
-      {/* Removed the sphere mesh since we're focusing on rotating the stars */}
-      <Stars ref={starsRef} />
+      <Stars ref={starsRef} />  
     </group>
   );
 };
-
 
 const Home = () => {
   return (
@@ -47,8 +45,8 @@ const Home = () => {
           <TypingAnimation />
         </div>
         {/* Canvas container */}
-        <div className="flex-grow flex justify-center items-center">
-          <Canvas className="w-full max-w-md h-auto aspect-square">
+        <div className="flex-grow flex justify-center items-center beacon">
+          <Canvas className="w-full max-w-md h-auto aspect-square center-glow ">
             <StarGlobe />
           </Canvas>
         </div>

@@ -56,6 +56,7 @@
 }
 
 
+
 /* 
 body {
   color: rgb(var(--foreground-rgb));
@@ -100,12 +101,12 @@ html, body, #__next {
   background-size: 200% 200%;
 }
 
-.globe-glow {
+.beacon {
   background: 
     /* Horizontal line (make thicker by increasing the second value of background-size) */
     linear-gradient(to bottom, rgba(102, 84, 222, 0) 50%, rgba(102, 84, 222, 0.3) 50%) no-repeat, 
     /* Glowing semicircle (make smaller by reducing the percentage in radial-gradient) */
-    radial-gradient(at bottom, #6654de 10%, transparent 60%) no-repeat; 
+    radial-gradient(at bottom, #14F195 10%, transparent 60%) no-repeat; 
   background-size: 100% 5px, 100% 100%; /* Size for line (thickness) and semicircle (smaller glow) */
   background-position: center bottom; /* Positioning at the bottom */
   color: white;
@@ -115,6 +116,24 @@ html, body, #__next {
   box-sizing: border-box;
   display: inline-block;
   margin: 0 0 px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.center-glow {
+  background: 
+    /* Glowing effect from the center */
+    radial-gradient(circle at center, #6654de 20%, transparent 80%) no-repeat;
+  background-size: 100% 100%; /* Size for radial glow */
+  background-position: center; /* Centering the gradient */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
   font-size: 16px;
   font-weight: bold;
   text-align: center;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const phrases = [
   'a voice',
@@ -14,7 +14,7 @@ const TypingAnimation: React.FC = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   useEffect(() => {
-    let timer: number;
+    let timer: number; // Declare timer as a number
 
     const handleTyping = () => {
       const currentPhraseIndex = loopNum % phrases.length;
@@ -28,31 +28,31 @@ const TypingAnimation: React.FC = () => {
 
       if (!isDeleting && text === fullPhrase) {
         // Pause at end of typing before deleting
-        timer = setTimeout(() => {
+        timer = window.setTimeout(() => {
           setIsDeleting(true);
           setTypingSpeed(200);
-        }, 1500);
+        }, 1500) as unknown as number; // Cast setTimeout as number
       } else if (isDeleting && text === '') {
         // Finished deleting, go to next phrase
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
       } else {
         // Continue typing/deleting
-        timer = setTimeout(handleTyping, typingSpeed);
+        timer = window.setTimeout(handleTyping, typingSpeed) as unknown as number; // Cast setTimeout as number
       }
     };
 
-    timer = setTimeout(handleTyping, typingSpeed);
+    timer = window.setTimeout(handleTyping, typingSpeed) as unknown as number; // Cast setTimeout as number
 
     return () => clearTimeout(timer);
   }, [text, isDeleting, loopNum, typingSpeed]);
 
-    return (
-        <span className="typing-container text-white text-3xl font-bold">
-          {text}
-          <span className="cursor">|</span> {/* This is your cursor */}
-        </span>
-      );
+  return (
+    <span className="typing-container text-white text-3xl font-bold">
+      {text}
+      <span className="cursor">|</span> {/* This is your cursor */}
+    </span>
+  );
 };
 
 export default TypingAnimation;
