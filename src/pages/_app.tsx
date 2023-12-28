@@ -1,6 +1,6 @@
 import { Provider } from 'mobx-react';
 import myStore from '../mvvm/store'; // Adjust the import path as needed
-import '../Styles/globals.css';
+import '../styles/globals.css';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 
