@@ -3,7 +3,6 @@ import { OrbitControls, Stars } from '@react-three/drei';
 import Image from 'next/image';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
-import GlowingButton from '../components/Buttons/GlowingButton/GlowingButton';
 import TypingAnimation from '../components/TypingAnimation/TypingAnimation'; // Make sure to create this component
 import IntroSection from '../mvvm/views/Home/IntroSection';
 import { Canvas, useFrame, useThree, extend } from '@react-three/fiber';
@@ -14,7 +13,7 @@ const StarGlobe = () => {
   const orbitControlsRef = useRef(null);
   const { camera } = useThree();
 
-  camera.position.set(0, 2.94, 480);
+  camera.position.set(0, 2.94, 500);
 
   useFrame(() => {
     if (starsRef.current) {
@@ -38,36 +37,33 @@ const Home = () => {
       <Navbar />
       <main className="flex flex-col items-center justify-between h-fit pt-12"> {/* Removed 'justify-center' */}
         {/* Hero section with Typing Animation */}
-        <div className="text-center flex justify-center items-end pb-16 mt-8"> {/* Added 'items-end mt-8' */}
-          <h1 className='text-white text-3xl font-bold'>
-            Those who create value should have&nbsp;
+        <div className="text-center flex flex-col justify-center items-center pb-8 mt-4 md:pb-16 md:mt-8">
+          <h1 className='text-white text-2xl font-bold md:text-3xl'>
+            Those who create value deserve&nbsp;
           </h1>
           <TypingAnimation />
         </div>
         {/* Canvas container */}
-        <div className="flex-grow flex justify-center items-center beacon">
-          <Canvas className="w-full max-w-md h-auto aspect-square center-glow ">
+        <div className="flex-grow flex justify-center items-center center-glow p-4">
+          <Canvas className="w-full max-w-xs h-auto aspect-square md:max-w-md">
             <StarGlobe />
           </Canvas>
         </div>
         {/* Additional content */}
-        <div className="flex mx-auto items-center justify-center flex-wrap gap-2">
-          <div className="flex py-4">
-            <span className="text-slate-400 font-bold text-sm tracking-wide">
+        <div className="flex mx-auto items-center justify-center flex-wrap gap-2 p-4">
+          <div className="flex py-2">
+            <span className="text-slate-400 font-bold text-xs md:text-sm">
               POWERED BY&nbsp;
             </span>
             <Image
               layout="intrinsic"
-              width={125}
-              height={19}
+              width={100}
+              height={15}
               alt=''
               src="/icons/solanaLogo.png"
-            ></Image>
-           </div>
+            />
+          </div>
         </div>
-
-        {/* Commented out for now */}
-        {/* <GlowingButton href="https://google.com">Join Discord</GlowingButton> */}
       </main>
       </div>
       <IntroSection />

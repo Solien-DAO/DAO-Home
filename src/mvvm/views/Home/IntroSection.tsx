@@ -40,9 +40,9 @@ const IntroSection: React.FC = () => {
   ];
 
   return (
-    <section className="px-32 py-12 relative bg-gradient-to-br from-blue-800 to-black h-fit w-full">
-      <h2 className="text-center text-white text-3xl font-bold mb-8">Features</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <section className="px-4 sm:px-12 md:px-32 py-12 bg-gradient-to-br from-blue-800 to-black">
+      <h2 className="text-center text-white text-2xl sm:text-3xl font-bold mb-8">Features</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
@@ -50,5 +50,6 @@ const IntroSection: React.FC = () => {
     </section>
   );
 };
+
 
 export default IntroSection;

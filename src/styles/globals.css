@@ -125,7 +125,7 @@ html, body, #__next {
   background: 
     /* Glowing effect from the center */
     radial-gradient(circle at center, #6654de 20%, transparent 80%) no-repeat;
-  background-size: 100% 100%; /* Size for radial glow */
+  background-size: 80% 80%; /* Size for radial glow */
   background-position: center; /* Centering the gradient */
   color: white;
   padding: 10px 20px;

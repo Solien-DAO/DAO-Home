@@ -48,7 +48,7 @@ const TypingAnimation: React.FC = () => {
   }, [text, isDeleting, loopNum, typingSpeed]);
 
   return (
-    <span className="typing-container text-white text-3xl font-bold">
+    <span className="typing-container text-white text-2xl font-bold md:text-3xl">
       {text}
       <span className="cursor">|</span> {/* This is your cursor */}
     </span>

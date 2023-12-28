@@ -7,7 +7,7 @@ export type GlowingButtonProps = {
 
 const GlowingButton: React.FC<GlowingButtonProps> = ({ children, href }) => {
   return (
-    <a href={href} className="inline-block px-4 py-2 bg-yellow-1 text-black rounded-lg text-lg font-medium hover:bg-yellow-2 animate-glow-slow">
+    <a href={href} className="inline-block px-4 py-2 bg-yellow-1 text-black mt-4 md:mt-0 rounded-lg text-lg font-medium hover:bg-yellow-2 animate-glow-slow">
       {children}
     </a>
   );
