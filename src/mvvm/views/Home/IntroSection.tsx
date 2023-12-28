@@ -7,19 +7,19 @@ const IntroSection: React.FC = () => {
     {
       iconPath: '/icons/daologo.png', // Replace with your actual icon paths
       title: 'NFT Access',
-      text: 'Connecting members social accounts to unique cryptographic keys...',
+      text: 'Connecting members social accounts to unique cryptographic keys is at the core of our Dynamic Balance-Based Membership solution. Users gain permission and access rights based on their wallets balances, providing direct proof of "Skin in the Game" for every community member.',
     },
     // ... Repeat for the second card
     {
       iconPath: '/icons/daologo.png', // Replace with your actual icon paths
-      title: 'Multi-Coin Configurations',
-      text: 'Our Dynamic Balance-Based Membership supports all Solana tokens...',
+      title: 'Multi-Token Configuration',
+      text: 'Our SDUST token provides ownership and governance, while the NFTs act as access passes.',
     },
     // ... Repeat for the third card
     {
       iconPath: '/icons/daologo.png', // Replace with your actual icon paths
       title: 'Community Driven DAO',
-      text: 'A Decentralized Autonomous Organization is the perfect structure for revenue generating groups...',
+      text: 'A Decentralized Autonomous Organization is the perfect structure for revenue generating groups. Members and leaders can decide together the direction the collective is heading. It can range from simple binary decisions to complicated strategic value-creating moves.',
     },
     // ... Add three more card data objects for the second row
     {

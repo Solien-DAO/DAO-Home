@@ -37,15 +37,15 @@ const Home = () => {
       <Navbar />
       <main className="flex flex-col items-center justify-between h-fit pt-12"> {/* Removed 'justify-center' */}
         {/* Hero section with Typing Animation */}
-        <div className="text-center flex flex-col justify-center items-center pb-8 mt-4 md:pb-16 md:mt-8">
+        <div className="text-center flex flex-col justify-center items-center pb-8 mt-4 md:pb-8 md:mt-8">
           <h1 className='text-white text-2xl font-bold md:text-3xl'>
             Those who create value deserve&nbsp;
           </h1>
           <TypingAnimation />
         </div>
         {/* Canvas container */}
-        <div className="flex-grow flex justify-center items-center center-glow p-4">
-          <Canvas className="w-full max-w-xs h-auto aspect-square md:max-w-md">
+        <div className="flex-grow flex justify-center items-center center-glow ">
+          <Canvas className="w-full max-w-xs h-auto aspect-square beacon md:max-w-md">
             <StarGlobe />
           </Canvas>
         </div>

@@ -3,7 +3,7 @@ import { Twitter, Chat, Forum, MailOutline } from '@mui/icons-material';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white p-4 px-32 flex flex-col items-center justify-between md:flex-row">
+    <footer className="bg-b-blue text-white p-4 px-32 flex flex-col items-center justify-between md:flex-row">
       <div className="flex flex-col items-center md:items-start">
         <span className="text-xl font-semibold">Solien DAO</span>
         <span className="text-sm">Powered by Solana</span>
