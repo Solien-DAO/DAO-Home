@@ -36,7 +36,7 @@ export default function Navbar() {
         <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">DAC</a>
         <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Forum</a>
         <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Docs</a>
-        <GlowingButton href="https://www.google.com">
+        <GlowingButton href="https://www.tribeca.so/gov/sdust">
           Vote
         </GlowingButton>
       </nav>

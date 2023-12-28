@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <span className="text-xs">&copy; 2021 Solien DAO</span>
       </div>
       <div className="flex space-x-4 mt-4 md:mt-0">
-        <a href="https://https://twitter.com/SolienDAO" className="text-white" aria-label="Twitter">
+        <a href="https://twitter.com/SolienDAO" className="text-white" aria-label="Twitter">
           <Twitter />
         </a>
         <a href="https://google.com" className="text-white" aria-label="Chat">
