@@ -7,6 +7,7 @@ import TypingAnimation from '../components/TypingAnimation/TypingAnimation'; // 
 import IntroSection from '../mvvm/views/Home/IntroSection';
 import { Canvas, useFrame, useThree, extend } from '@react-three/fiber';
 import * as THREE from 'three';
+import InfoSection from '../components/InfoSection/InfoSection';
 
 const StarGlobe = () => {
   const starsRef = useRef<any>(null); // Using 'any' as a workaround
@@ -57,7 +58,7 @@ const Home = () => {
             </span>
             <Image
               layout="intrinsic"
-              width={100}
+              width={110}
               height={15}
               alt=''
               src="/icons/solanaLogo.png"
@@ -66,6 +67,7 @@ const Home = () => {
         </div>
       </main>
       </div>
+      <InfoSection />
       <IntroSection />
       <Footer />
     </div>

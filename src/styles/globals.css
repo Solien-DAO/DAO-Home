@@ -104,3 +104,86 @@
   font-weight: bold;
   text-align: center;
 }
+/* Add these styles to your global.css or within a <style> tag in your component */
+.dao-section {
+  @apply bg-blue-900 py-12 text-white;
+}
+
+.dao-info {
+  @apply text-lg;
+}
+
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Remember to adjust colors and padding to match your design system */
+
+/* InfoSection.css */
+.dao-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tabs {
+  margin-right: 2rem;
+}
+
+.tab-button {
+  background: transparent;
+  border: 1px solid #FFF;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  color: #FFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.tab-button:hover{
+  background-color: rgb(132, 132, 132);
+  color: #000;
+}
+
+.tab-button.active {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+.content-area {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.tab-content {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #FFF;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
