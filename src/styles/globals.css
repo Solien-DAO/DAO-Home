@@ -59,12 +59,14 @@
 
 .animated-background {
   animation: gradientBackground 10s ease infinite;
-  background: linear-gradient(45deg, #6654de, #14F195);
-  background-size: 400% 400%;
+  background: linear-gradient(45deg, #6654de, #08322000);
+  background-size: 200% 200%;
 }
-
-
-
+.animated-background-2 {
+  animation: gradientBackground 10s ease infinite;
+  background: linear-gradient(45deg, #6654de, #08322000);
+  background-size: 400% 100%;
+}
 
 
 .beacon {
@@ -133,23 +135,24 @@
 
 .tab-button {
   background: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid rgba(255, 255, 255, 0.643);
   padding: 1rem;
   width: 100%;
   text-align: left;
-  color: #FFF;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
   margin-bottom: 0.5rem;
 }
 
 .tab-button:hover{
-  background-color: rgb(132, 132, 132);
-  color: #000;
+  background-color: rgba(30, 30, 30, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .tab-button.active {
-  background-color: rgb(255, 255, 255);
-  color: #000;
+  background-color: rgb(30, 41, 59, 0.9);
+  color:#FFF;
 }
 
 .content-area {

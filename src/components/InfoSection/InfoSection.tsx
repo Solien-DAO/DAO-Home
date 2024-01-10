@@ -32,10 +32,10 @@ const InfoSection = () => {
   const [activeTab, setActiveTab] = useState<string>('first-nft-dao');
 
   return (
-    <section className="dao-section bg-brand-secondary mx-auto px-4 sm:px-12 md:px-32 h-fit py-12">
+    <section className="dao-section animated-background-2 mx-auto px-4 sm:px-12 md:px-32 h-fit py-12">
       <div className="container flex">
         <div className="flex flex-col">
-          <h2 className="text-2xl font-bold mb-4 text-white">What is Solien DAO?</h2>
+          <h2 className="text-2xl font-bold mb-4 ">What is Solien DAO?</h2>
             <div className="flex flex-row">
               <div className="w-1/3">
                 <div className="tabs flex font-bold flex-col">
