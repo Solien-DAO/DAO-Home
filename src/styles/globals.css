@@ -165,11 +165,6 @@
   padding: 1rem;
   border-radius: 0.5rem;
   width: 100%;
-  margin-top: 1rem;
-}
-
-.tab-content {
-  margin-bottom: 1rem;
 }
 
 .btn-primary {
@@ -187,3 +182,13 @@
   background-color: #333;
 }
 
+.custom-art-bg {
+  background-image: url('/icons/art.jpg');
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image vertically and horizontally */
+}
+
+.bg-grey-low-opacity {
+  background-color: rgba(128, 128, 128, 0.9); /* Grey color with 50% opacity */
+}

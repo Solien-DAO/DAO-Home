@@ -24,7 +24,7 @@ const TypingAnimation: React.FC = () => {
         ? fullPhrase.substring(0, text.length - 1) 
         : fullPhrase.substring(0, text.length + 1));
 
-      setTypingSpeed(isDeleting ? 100 : 150);
+      setTypingSpeed(isDeleting ? 75 : 100);
 
       if (!isDeleting && text === fullPhrase) {
         // Pause at end of typing before deleting
