@@ -32,9 +32,7 @@ export default function Navbar() {
 
       {/* Menu Items */}
       <nav className={`absolute top-full right-0 md:top-auto bg-b-blue transition-all ease-in-out py-4 duration-300 ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row md:space-x-4 md:items-center md:static md:bg-transparent md:z-auto z-10`}>
-        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Dashboard</a>
-        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">DAC</a>
-        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Forum</a>
+        <a href="https://www.discord.gg/soliendao" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Discord</a>
         <a href="https://solien-dao.gitbook.io/" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Docs</a>
         <GlowingButton href="https://www.tribeca.so/gov/sdust">
           Vote

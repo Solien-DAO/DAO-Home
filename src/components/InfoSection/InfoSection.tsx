@@ -54,7 +54,7 @@ const InfoSection = () => {
                     Solien DAO launched on August 26, 2021.
                   </p>
                   <p className="text-lg text-black">
-                  We started our governance system by using simple discord polls to determine our first investments in Star Atlas, and have since been one of the first organizations to make use of tooling such as Squads, Tribeca, and more. We pushed the boundaries of what a DAO is, taking it beyond a simple groupchat with no governance structure or ethos. Our structure and process for operating was set forward since day 1, and has been placed in the hands of the community.
+                  We started our governance system by using simple discord polls to determine our first investments in Star Atlas, and have since been one of the first organizations to make use of tooling such as Squads, Tribeca, and more. We pushed the boundaries of what a DAO is, taking it beyond a simple groupchat with no governance structure or ethos.
                   </p>
             </TabContent>
             <TabContent id="community-operated" activeTab={activeTab}>
@@ -64,12 +64,12 @@ const InfoSection = () => {
             </TabContent>
             <TabContent id="alien-artwork" activeTab={activeTab}>
               <p className="text-lg text-black">
-                Our artwork is currently going through a major upgrade with new traits suggested by DAO members, giving the collection a fresh feel. We are keeping the original extraterrestrial theme while updating traits and art style to be more diverse, appealing to a wider audience within the crypto space.
+                Our artwork is currently going through a major upgrade with new traits suggested by DAO members, giving the collection a fresh feel. We are keeping the original extraterrestrial theme while updating traits and art style to be more sci-fi themed.
               </p>
             </TabContent>
             <TabContent id="play-to-earn" activeTab={activeTab}>
               <p className="text-lg text-black">
-                Our DAO specializes in leveraging play-to-earn assets by making use of the human and financial capital at our disposal. Our $25k investment in Photo Finish paid for itself via revenue earned from users interested in breeding with our top horses and has since grown by many multiples. We are one of the largest wallets in Star Atlas by assets, and we have been putting our resources to work by providing exclusive ship access to DAO members, and other benefits from the top in-game assets we own and operate. Most of which are financially out of reach for most individuals.
+                Our DAO specializes in leveraging play-to-earn assets by making use of the human and financial capital at our disposal. Our $25k investment in Photo Finish paid for itself via revenue earned from users interested in breeding with our top horses and has since grown by many multiples. We are one of the largest wallets in Star Atlas by assets, and we have been putting our resources to work by providing exclusive ship access to DAO members, and other benefits from the top in-game assets we own and operate.
               </p>
             </TabContent>
             <TabContent id="defi-enthusiasts" activeTab={activeTab}>

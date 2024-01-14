@@ -63,8 +63,8 @@ const Home = () => {
             </h1>
             <TypingAnimation />
           </div>
-          <div className="flex-grow flex justify-center items-center center-glow ">
-            <Canvas className="w-full max-w-xs h-auto aspect-square beacon md:max-w-md">
+          <div className="flex-grow flex justify-center items-center center-glow">
+            <Canvas className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 h-auto aspect-square beacon">
               <StarGlobe />
             </Canvas>
           </div>
