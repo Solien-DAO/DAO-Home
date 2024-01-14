@@ -10,7 +10,8 @@ import * as THREE from 'three';
 import InfoSection from '../components/InfoSection/InfoSection';
 
 const StarGlobe = () => {
-  const starsRef = useRef<any>(null); // Using 'any' as a workaround
+  // Adjust the type for starsRef to match the expected type of the Stars component
+  const starsRef = useRef<THREE.Points>(null);
   const orbitControlsRef = useRef(null);
   const { camera } = useThree();
 

@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="relative flex items-center justify-between px-4 md:px-32 bg-b-blue text-white">
+    <header className="relative flex items-center justify-between px-4 md:px-32 animated-background-2 text-white h-16 md:h-20">
       <div className="flex items-center">
         <Image
           src="/icons/daologo.png"
@@ -35,7 +35,7 @@ export default function Navbar() {
         <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Dashboard</a>
         <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">DAC</a>
         <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Forum</a>
-        <a href="https://www.google.com" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Docs</a>
+        <a href="https://solien-dao.gitbook.io/" className="block text-white py-2 px-4 hover:bg-blue-700 md:hover:bg-transparent md:text-white md:p-0">Docs</a>
         <GlowingButton href="https://www.tribeca.so/gov/sdust">
           Vote
         </GlowingButton>
